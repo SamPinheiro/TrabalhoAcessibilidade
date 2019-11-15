@@ -1,0 +1,16 @@
+@mixin flex ($content, $items) {
+    display: flex;
+    justify-content: $content;
+    align-items: $items;
+}
+
+@mixin transition ($segundos) {
+    transition: all $segundos ease;
+}
+
+$corTexto-color: #F3F3F3;
+$corFundo-color: #293980;
+$corFundoB-color: #9EB0FF;
+
+$corFundoAC-color: #333;
+$corFundoBAC-color: #F3F3F3;

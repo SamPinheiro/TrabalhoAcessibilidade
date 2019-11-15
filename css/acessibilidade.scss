@@ -1,0 +1,24 @@
+@import "variables.scss";
+
+.contraste {
+    background-color: $corFundoBAC-color !important;
+
+    nav {
+        background-color: $corFundoAC-color !important; 
+
+        .ac {
+            background-color: $corFundoAC-color;
+            button {
+                background-color: $corFundoAC-color;
+                border: none;
+            }
+        }
+
+        
+    }
+
+    footer {
+        background-color: $corFundoAC-color !important;
+    }
+
+}

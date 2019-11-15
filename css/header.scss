@@ -1,0 +1,102 @@
+@import "variables.scss";
+
+nav {
+    @include flex (space-around, center);
+    min-height: 8vh;
+    background-color: $corFundo-color;
+}
+
+.ac {
+    background-color: $corFundo-color;
+    border: 0 none;
+}
+
+.logo {
+    a {       
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: $corTexto-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        opacity: 0.8;
+        @include transition(0.5s);
+    }
+}
+
+.navLinks {
+    @include flex (space-around, none);
+    width: 30%;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: $corTexto-color;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: bold;
+        @include transition(0.5s);
+    }
+    
+    a:hover {
+        opacity: 0.8;
+    }
+}
+
+.burger {
+    display: none;
+
+    div {
+        width: 25px;
+        height: 3px;
+        background-color: $corTexto-color;
+        margin: 5px;
+        @include transition(0.4s);
+    }
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navLinks {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: $corFundo-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        li {
+            opacity: 0;
+        }
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

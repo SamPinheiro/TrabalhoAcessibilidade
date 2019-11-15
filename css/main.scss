@@ -1,0 +1,167 @@
+@import "variables.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "acessibilidade.scss";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    body{
+        background-color: $corFundoB-color;
+        transition: all ease 0.5s
+    }
+}
+
+.jogos {
+    @include flex (space-around, center);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    div {
+        margin: 60px 0;
+        height: 500px;
+        width: 400px;
+        text-align: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        border-radius: 3%;
+        transition: transform 1s;
+    }
+
+    div:hover {
+        box-shadow: 1px 1px 5px 1px #333;
+        transform: translate(0, -10px);
+    }
+
+    .AB {
+        background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bf739ed7-d95b-43c2-8868-1a88a5829ce5/dccrha7-9dd36f1f-db74-40b6-b294-f7ee38523a4b.png/v1/fill/w_894,h_894,q_70,strp/moon_pixel_background_edit_by_fallingpixels_dccrha7-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiJcL2ZcL2JmNzM5ZWQ3LWQ5NWItNDNjMi04ODY4LTFhODhhNTgyOWNlNVwvZGNjcmhhNy05ZGQzNmYxZi1kYjc0LTQwYjYtYjI5NC1mN2VlMzg1MjNhNGIucG5nIiwid2lkdGgiOiI8PTIwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.pl8L7_XESLClGeG48dndch3fJ4yK0ub7GS9S88C2dgA");
+    }
+
+    .CX {
+        background-image: url("https://images.wallpaperscraft.com/image/this_war_of_mine_the_little_ones_11_bit_studios_107352_540x960.jpg");
+    }
+
+    .N {
+        background-image: url("https://i.ytimg.com/vi/KwYSqx4GfjM/maxresdefault.jpg");
+    }
+
+    .DU {
+        background-image: url("https://www.tokkoro.com/picsup/2831331-church___anime-wallpapers.jpg");
+    }
+
+    h3 {
+        margin-top: 100px;
+        color: white;
+        font-weight: bold;
+        font-family: monospace;
+        text-shadow: 1px 0 10px #333;
+    }
+
+    button {
+        margin: 30px;
+        height: 40px;
+        width: 100px;
+        border-radius: 10%;
+        background-color: white;
+        border: none;
+        color: #333;
+        font-family: monospace;
+        font-weight: bold;
+        @include transition (0.5s);
+    }
+
+    button:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 5px 1px #333333;
+    }
+}
+
+a {
+    font-size: 20px;
+}
+
+p {
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.equipeC {
+    @include flex(center, none);
+    flex-flow: row wrap;
+    text-align: center;
+    margin: 80px;
+    .cardE {
+        width: 400px;
+        margin: 40px;
+        img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+        }
+        .media {
+            border-radius: 0%;
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+        }
+    }
+    a {
+        @include transition(0.3s);
+    }
+    a:hover {
+        opacity: 0.7;
+    }
+}
+
+.an {
+    transform: rotate(-60deg);
+}
+
+.sobre {
+    @include flex(center, center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 80px 0;
+    div {
+        text-align: center;
+        width: 90%;
+        p {
+            text-align: center;
+            margin: 10px 120px;
+        }
+    }
+}
+
+.form {
+    @include flex(center, none);
+    flex-flow: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ac{
+    button {
+        margin: 0 5px;
+        border: none;
+        background-color: $corFundo-color;
+        @include transition(0.3s);
+        img {
+            width: 30px;
+        }
+    }
+
+    button:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+} 
+
