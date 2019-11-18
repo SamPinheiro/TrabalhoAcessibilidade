@@ -5,8 +5,17 @@ const navSlide = () => {
 
     //Toggle Nav
     burger.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
+        if(nav.style.display == 'flex') {
+            setTimeout(() => {
+                nav.style.display = '';
+            }, 500)
+        }
+        else nav.style.display = 'flex';
 
+        setTimeout(() => {
+            nav.classList.toggle('nav-active');
+        }, 1);
+        
         //Animate Links
         navLinks.forEach((link, index) => {
             if (link.style.animation) {

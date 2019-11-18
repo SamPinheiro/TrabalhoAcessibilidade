@@ -11,32 +11,6 @@ nav {
   border: 0 none;
 }
 
-.login {
-  border: white 1px solid;
-  padding: 10px;
-}
-
-.login a {
-  color: #F3F3F3;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
-.login a:hover {
-  opacity: 0.7;
-}
-
-.conta {
-  display: none;
-  color: #F3F3F3;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-
-.conta:hover {
-  opacity: 0.7;
-}
-
 .logo a {
   font-weight: bold;
   letter-spacing: 3px;
@@ -94,7 +68,7 @@ nav {
     height: 92vh;
     top: 8vh;
     background-color: #293980;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     width: 50%;
@@ -121,36 +95,6 @@ nav {
     opacity: 1;
     transform: translateX(0px);
   }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.user {
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  display: flex;
-  align-items: center;
-}
-
-.user img {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-
-.user span {
-  margin-left: 5%;
 }
 
 footer {
@@ -216,11 +160,17 @@ footer img:hover {
 
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
 }
 
 html body {
   background-color: #9EB0FF;
   transition: all ease 0.5s;
+  text-align: center;
+}
+
+html h3 {
+  margin-top: 80px;
 }
 
 .jogos {
@@ -265,7 +215,7 @@ html body {
 }
 
 .jogos h3 {
-  margin-top: 100px;
+  margin-top: 100px !important;
   color: white;
   font-weight: bold;
   font-family: monospace;
@@ -308,7 +258,7 @@ h3 {
   align-items: none;
   flex-flow: row wrap;
   text-align: center;
-  margin: 80px;
+  margin: 10px 80px 80px;
 }
 
 .equipeC .cardE {
@@ -347,7 +297,7 @@ h3 {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 80px 0;
+  margin: 0 0 100px 0;
 }
 
 .sobre div {
@@ -357,7 +307,7 @@ h3 {
 
 .sobre div p {
   text-align: center;
-  margin: 10px 120px;
+  margin: 10px 20px;
 }
 
 .form {
